@@ -17,6 +17,6 @@ jobs:
           cat metrics.txt >> report.md
 
           echo "## Data viz" >> report.md
-          cml comment feature_importance.png --md >> report.md
-          cml comment residuals.png --md >> report.md
+          cml comment create report.md feature_importance.png --md >> report.md
+          cml comment create report.md residuals.png --md >> report.md
           cml-send-comment report.md
